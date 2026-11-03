@@ -1,0 +1,17 @@
+{
+  "name": "Dra. Júlia Vieira — Ortodontia e Estética",
+  "short_name": "Dra. Júlia Vieira",
+  "description": "Ortodontia e estética dental em João Pessoa — PB.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F7F3",
+  "theme_color": "#24483F",
+  "icons": [
+    {
+      "src": "/img/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
