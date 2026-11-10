@@ -14,22 +14,14 @@ export function Footer({ onOpenPrivacy }: FooterProps) {
       <div className="mx-auto w-full max-w-[1280px] px-5 py-16 sm:px-8 lg:px-12">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-5">
-            <a href="#inicio" className="inline-flex items-center gap-3" >
-              <span className="grid size-12 place-items-center rounded-full bg-cream">
-                <img
-                  src={brand.monogram}
-                  alt=""
-                  width={34}
-                  height={34}
-                  className="size-9 mix-blend-multiply"
-                />
-              </span>
-              <span className="flex flex-col">
-                <span className="font-display text-[1.55rem] leading-none text-ink">{brand.name}</span>
-                <span className="mt-1.5 text-[8.5px] tracking-[0.32em] text-muted uppercase">
-                  {brand.specialty}
-                </span>
-              </span>
+            <a href="#inicio" aria-label={`${brand.name} — início`} className="inline-flex w-[220px] max-w-full items-center">
+              <img
+                src="/img/logo-dourada-header.png?v=2"
+                alt={`${brand.name} — ${brand.specialty}`}
+                width={1022}
+                height={540}
+                className="h-auto w-full object-contain"
+              />
             </a>
 
             <p className="mt-6 max-w-[38ch] text-[12.5px] leading-[1.85] text-muted">
