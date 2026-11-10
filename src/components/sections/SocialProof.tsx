@@ -5,9 +5,9 @@ import { Reveal } from '../ui/Reveal'
 
 export function SocialProof() {
   return (
-    <section className="py-20 sm:py-24 lg:py-28">
+    <section id="redes" className="border-y border-forest/10 bg-[#f0ece5] py-14 sm:py-16 lg:py-20">
       <div className="mx-auto grid w-full max-w-[1280px] gap-5 px-5 sm:px-8 lg:grid-cols-2 lg:px-12">
-        <Reveal className="h-full">
+        <Reveal className="h-full lg:col-span-2">
           <article className="flex h-full flex-col rounded-[6px] border border-forest/10 bg-paper p-7 sm:p-9">
             <div className="flex items-center gap-3">
               <span aria-hidden="true" className="h-px w-8 bg-gold/70" />
@@ -53,26 +53,26 @@ export function SocialProof() {
         </Reveal>
 
         <Reveal delay={120} className="h-full">
-          <article className="relative flex h-full flex-col overflow-hidden rounded-[6px] bg-forest p-7 text-cream sm:p-9">
+          <article className="relative flex h-full flex-col overflow-hidden rounded-[6px] border border-gold/25 bg-[#e8dfd1] p-7 text-ink sm:p-9">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -top-20 -right-16 size-64 rounded-full border border-cream/10"
+              className="pointer-events-none absolute -top-20 -right-16 size-64 rounded-full border border-gold/20"
             />
 
             <div className="flex items-center gap-3">
-              <span aria-hidden="true" className="h-px w-8 bg-gold-soft/70" />
-              <span className="eyebrow text-gold-soft">{instagram.eyebrow}</span>
+              <span aria-hidden="true" className="h-px w-8 bg-gold/80" />
+              <span className="eyebrow text-gold-ink">{instagram.eyebrow}</span>
             </div>
 
             <h3 className="mt-6 max-w-[30ch] font-display text-[1.75rem] leading-[1.15] font-light">
               {instagram.title}
             </h3>
-            <p className="mt-3 max-w-[44ch] text-[13.5px] leading-[1.8] text-cream/65">
+            <p className="mt-3 max-w-[44ch] text-[13.5px] leading-[1.8] text-muted">
               {instagram.description}
             </p>
 
             <div className="mt-auto flex flex-wrap items-center gap-6 pt-8">
-              <div className="rounded-[4px] border border-cream/20 bg-cream p-2">
+              <div className="rounded-[4px] border border-gold/25 bg-white/75 p-2">
                 <img
                   src={instagram.qr}
                   alt="QR Code do Instagram de Dra. Júlia Vieira"
@@ -84,11 +84,11 @@ export function SocialProof() {
               </div>
 
               <div className="space-y-3">
-                <p className="font-display text-[1.15rem] text-cream/90">{contact.instagramHandle}</p>
+                <p className="font-display text-[1.15rem] text-ink">{contact.instagramHandle}</p>
                 <Button
                   href={contact.instagramUrl}
                   external
-                  variant="light"
+                  variant="primary"
                   size="md"
                   icon="up-right"
                 >

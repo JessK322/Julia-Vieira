@@ -42,22 +42,14 @@ export function Header() {
         )}
       >
         <div className="mx-auto flex h-[74px] w-full max-w-[1280px] items-center justify-between gap-6 px-5 sm:px-8 lg:h-[88px] lg:px-12">
-          <a href="#inicio" className="group flex shrink-0 items-center gap-3" >
+          <a href="#inicio" aria-label={`${brand.name} — ${brand.specialty}`} className="group flex h-[66px] w-[142px] shrink-0 items-center sm:w-[172px] lg:h-[76px] lg:w-[190px]">
             <img
-              src={brand.monogram}
-              alt=""
-              width={46}
-              height={46}
-              className="size-10 mix-blend-multiply transition-transform duration-700 ease-soft group-hover:scale-[1.04] lg:size-[46px]"
+              src={brand.logo}
+              alt={`${brand.name} — ${brand.specialty}`}
+              width={1022}
+              height={540}
+              className="max-h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"
             />
-            <span className="flex flex-col">
-              <span className="font-display text-[1.3rem] leading-none tracking-[-0.01em] text-ink lg:text-[1.45rem]">
-                {brand.name}
-              </span>
-              <span className="mt-1.5 text-[8.5px] font-medium tracking-[0.3em] text-muted uppercase">
-                {brand.specialty}
-              </span>
-            </span>
           </a>
 
           <nav aria-label="Navegação principal" className="hidden items-center gap-8 lg:flex xl:gap-10">

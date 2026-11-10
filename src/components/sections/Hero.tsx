@@ -1,5 +1,5 @@
 import { CalendarCheck, CreditCard, MapPin } from 'lucide-react'
-import { brand, contact, hero } from '../../data/site'
+import { brand, hero } from '../../data/site'
 import { Reveal } from '../ui/Reveal'
 import { Button } from '../ui/Button'
 
@@ -30,7 +30,7 @@ export function Hero() {
 
           <Reveal delay={80}>
             <h1 className="mt-6 font-display text-[clamp(2.85rem,5.6vw,4.7rem)] leading-[0.95] font-light tracking-[-0.015em] text-ink">
-              <span className="block">Um cuidado que coloca</span>
+              <span className="block text-[0.68em] tracking-[0.12em] text-muted uppercase">Dra. Júlia Vieira</span>
               <span className="block">
                 <em className="font-normal text-gold-deep italic">{hero.titleEmphasis}</em> no centro.
               </span>
@@ -43,9 +43,6 @@ export function Hero() {
 
           <Reveal delay={240}>
             <div className="mt-9 flex flex-wrap items-center gap-3 sm:gap-4">
-              <Button href={contact.whatsappUrl} external size="lg" className="w-full sm:w-auto">
-                {hero.primaryCta}
-              </Button>
               <Button
                 href="#sobre"
                 variant="outline"
@@ -77,7 +74,7 @@ export function Hero() {
         </div>
 
         <Reveal delay={180} className="relative mx-auto w-full max-w-[470px]">
-          <div aria-hidden="true" className="arch absolute inset-x-7 -top-3 bottom-8 bg-sage/75" />
+          <div aria-hidden="true" className="arch absolute inset-x-7 -top-3 bottom-8 bg-[#eee6da]" />
           <div
             aria-hidden="true"
             className="absolute -top-1 -right-1 hidden size-24 rounded-full border border-gold/35 sm:block"
