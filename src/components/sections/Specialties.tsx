@@ -33,7 +33,7 @@ export function Specialties({ onOpenService }: SpecialtiesProps) {
             <Reveal key={service.id} delay={index * 90}>
               <article
                 className={cn(
-                  'group relative flex h-full w-full flex-col overflow-hidden rounded-[6px] border border-forest/10 bg-cream text-left',
+                  `group relative flex h-full w-full flex-col overflow-hidden rounded-[6px] border ${service.id === 'invisalign' ? 'border-[#244f76]/25 bg-[#f1f5f8]' : 'border-forest/10 bg-cream'} text-left`,
                   'transition-all duration-500 ease-soft hover:-translate-y-1.5 hover:border-gold/50',
                   'hover:shadow-[0_34px_70px_-46px_rgba(36,72,63,0.55)]',
                 )}

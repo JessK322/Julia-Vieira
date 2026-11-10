@@ -6,6 +6,14 @@
  * Campos marcados com "a confirmar" são placeholders do protótipo.
  */
 
+/**
+ * Versão dos assets de imagem.
+ * Incrementar sempre que uma imagem for substituída: força o navegador
+ * a buscar a nova versão em vez de reutilizar o cache antigo.
+ */
+const ASSET_VERSION = '2'
+const img = (path: string) => `${path}?v=${ASSET_VERSION}`
+
 export const brand = {
   name: 'Dra. Júlia Vieira',
   fullName: 'Dra. Júlia Vieira de Sá',
@@ -13,6 +21,7 @@ export const brand = {
   specialty: 'Ortodontia e Estética',
   clinic: 'VS Odontologia',
   monogram: '/img/brand-mark.png',
+  logo: img('/img/logo-dourada-header.png'),
   cro: 'CRO-PB 00000 — a confirmar',
 } as const
 
@@ -66,7 +75,7 @@ export const hero = {
     'Atendimento odontológico humanizado, com atenção individualizada e compromisso com o seu bem-estar.',
   primaryCta: 'Agendar consulta',
   secondaryCta: 'Conheça minha atuação',
-  image: '/img/julia-hero.webp',
+  image: img('/img/julia-hero.webp'),
   imageAlt: 'Dra. Júlia Vieira de Sá, cirurgiã-dentista, em retrato profissional',
   badges: [
     { icon: 'MapPin', label: 'Atendimento presencial' },
@@ -78,7 +87,7 @@ export const hero = {
 export const about = {
   eyebrow: 'Sobre',
   title: 'Conheça a profissional por trás do cuidado.',
-  image: '/img/julia-about.webp',
+  image: img('/img/julia-about.webp'),
   imageAlt: 'Retrato da Dra. Júlia Vieira de Sá',
   caption: 'Dra. Júlia Vieira de Sá',
   paragraphs: [
@@ -149,7 +158,7 @@ export const services: Service[] = [
     title: 'Invisalign®',
     short:
       'Alinhadores transparentes e removíveis para um tratamento ortodôntico discreto, planejado digitalmente.',
-    image: '/img/invisalign.webp',
+    image: img('/img/invisalign.webp'),
     imageAlt: 'Estojo de alinhadores transparentes Invisalign®',
     message: 'Olá, Dra. Júlia! Vim pelo site e gostaria de saber mais sobre o tratamento com Invisalign®.',
     details: {
@@ -170,7 +179,7 @@ export const services: Service[] = [
     title: 'Ortodontia Infantil e Ortopedia',
     short:
       'Acompanhamento do crescimento da mordida na infância, com orientação próxima à família.',
-    image: '/img/infantil.webp',
+    image: img('/img/infantil.webp'),
     imageAlt: 'Criança sorrindo e segurando um aparelho ortodôntico removível',
     message:
       'Olá, Dra. Júlia! Vim pelo site e gostaria de saber mais sobre ortodontia infantil e ortopedia.',
@@ -192,7 +201,7 @@ export const services: Service[] = [
     title: 'Clareamento Dental',
     short:
       'Protocolo de clareamento realizado com avaliação prévia, indicação personalizada e acompanhamento.',
-    image: '/img/clareamento.webp',
+    image: img('/img/clareamento.webp'),
     imageAlt: 'Placas de clareamento dental e seringa de gel clareador',
     message: 'Olá, Dra. Júlia! Vim pelo site e gostaria de saber mais sobre clareamento dental.',
     details: {
@@ -213,7 +222,7 @@ export const services: Service[] = [
     title: 'Aparelho Fixo',
     short:
       'Tratamento ortodôntico convencional, com planejamento individual e ajustes periódicos.',
-    image: '/img/aparelho.webp',
+    image: img('/img/aparelho.webp'),
     imageAlt: 'Modelos dentários com aparelho ortodôntico fixo',
     message: 'Olá, Dra. Júlia! Vim pelo site e gostaria de saber mais sobre aparelho fixo.',
     details: {
@@ -295,7 +304,7 @@ export const clinic = {
     'No VS Odontologia, cada detalhe foi planejado para que você se sinta à vontade — da recepção ao atendimento, com tecnologia e cuidado em cada etapa.',
   photos: Array.from(
     { length: 14 },
-    (_, index) => `/img/clinic-${String(index + 1).padStart(2, '0')}.webp`,
+    (_, index) => img(`/img/clinic-${String(index + 1).padStart(2, '0')}.webp`),
   ),
   features: [
     {
@@ -345,7 +354,7 @@ export const instagram = {
   title: 'Acompanhe o consultório de perto.',
   description:
     'Bastidores, orientações de saúde bucal e novidades do consultório — tudo com a linguagem próxima de quem acompanha a Dra. Júlia.',
-  qr: '/img/instagram-qr.png',
+  qr: img('/img/instagram-qr.png'),
 } as const
 
 export const finalCta = {

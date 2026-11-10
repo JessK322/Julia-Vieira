@@ -19,7 +19,7 @@ type ButtonProps = {
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-forest text-cream shadow-[0_18px_40px_-26px_rgba(36,72,63,0.95)] hover:bg-forest-deep hover:shadow-[0_24px_50px_-24px_rgba(36,72,63,0.8)]',
+    'bg-[#a88955] text-white shadow-[0_18px_40px_-26px_rgba(108,80,36,0.65)] hover:bg-[#8e7144] hover:shadow-[0_24px_50px_-24px_rgba(108,80,36,0.55)]',
   outline: 'border border-forest/25 text-forest hover:border-forest/60 hover:bg-forest/[0.04]',
   light: 'bg-cream text-forest hover:bg-white',
   ghost: 'px-0 text-forest hover:text-gold-ink',

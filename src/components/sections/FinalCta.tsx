@@ -47,7 +47,7 @@ export function FinalCta() {
               href={whatsappLink('Olá, Dra. Júlia! Vim pelo site e gostaria de agendar uma consulta.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex h-[3.5rem] items-center justify-center gap-3 rounded-full bg-cream px-8 text-[10.5px] font-semibold tracking-[0.2em] text-forest uppercase transition-all duration-500 ease-soft hover:bg-white hover:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.45)]"
+              className="group inline-flex h-[3.5rem] items-center justify-center gap-3 rounded-full bg-[#d2b47d] px-8 text-[10.5px] font-semibold tracking-[0.2em] text-[#352a1d] uppercase transition-all duration-500 ease-soft hover:bg-[#e0c895] hover:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.45)]"
             >
               <WhatsAppIcon className="size-[17px]" />
               {finalCta.cta}

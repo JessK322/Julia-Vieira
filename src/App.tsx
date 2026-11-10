@@ -34,13 +34,13 @@ export default function App() {
 
       <main id="conteudo" tabIndex={-1} className="outline-none">
         <Hero />
+        <SocialProof />
         <TrustBar />
         <About onOpenTrajectory={() => setTrajectoryOpen(true)} />
         <Specialties onOpenService={setSelectedService} />
         <Differentiators />
         <Journey />
         <Clinic />
-        <SocialProof />
         <FinalCta />
       </main>
 
